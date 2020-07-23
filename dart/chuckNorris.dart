@@ -44,7 +44,7 @@
                 if(binaryCode[i] == binaryCode[i-1]){
                     substring += binaryCode[i];
                     encrypted += binaryCode[i] == '1' ? '0 ' + zeros( substring ) : '00 ' + zeros(substring);
-                } else{
+                } else {
                     stderr.writeln('substring ' + substring + 'encrypted' + encrypted);
                     encrypted += binaryCode[i - 1] == '1' ? '0 ' + zeros( substring ) : '00 ' + zeros(substring) + ' ';
                     encrypted += binaryCode[i] == '1' ? '0 ' + zeros( binaryCode[i] ) : '00 ' + zeros( binaryCode[i] );
